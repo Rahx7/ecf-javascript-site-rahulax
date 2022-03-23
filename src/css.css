@@ -1,0 +1,801 @@
+html { margin:0; padding:0; border:0; font-family: sans-serif; }
+body{
+   
+  }
+
+* {
+    box-sizing: border-box; 
+}
+
+
+:root{
+    --maCouleur1 : #ddd;
+    --maCouleur2 : rgb(131, 58, 58);
+    --maCouleur3 : rgb(44, 216, 130);
+    --monContent : "mon bla bla bli";
+}
+
+#centreDiv{
+
+    background-color: var(--maCouleur3);
+    width: 100px;
+    height: 100px;
+    border: black 1px;
+    
+}
+
+
+#centreDiv::before{
+    content:var(--monContent);
+    width: 100px;
+    height: 100px;
+
+}
+
+
+/* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"); */
+
+/**************scrollbar*********/
+#main::-webkit-scrollbar {
+    width: 6px;
+    /* width of the entire scrollbar */
+    margin-right: 2px;
+}
+
+#main::-webkit-scrollbar-track {
+    background: rgba(158, 158, 158, 0.288);
+    /* color of the tracking area */
+}
+
+#main::-webkit-scrollbar-thumb {
+    background-color: rgba(184, 184, 184, 0.89);
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    /*  border: 3px solid orange; creates padding around scroll thumb */
+}
+
+/***********************************/
+
+@font-face {
+
+    font-family: 'nunito';
+    src: url('font/Nunito-Regular.ttf') format('truetype');
+
+
+}
+
+@font-face {
+
+    font-family: 'denk';
+    src: url('font/Nunito-Black.ttf') format('truetype');
+}
+
+@font-face {
+
+    font-family: 'espera';
+    src: url('font/Espera-Bold.ttf') format('truetype');
+    font-weight: bold;
+
+}
+
+@font-face {
+
+    font-family: 'Giorgio';
+    src: url('font/Giorgio.ttf') format('truetype');
+}
+
+html {
+
+    font-family: 'espera';
+    font-size: 14px;
+    
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.2em!important;
+}
+
+body {
+
+    /*background: url(img/tof-nature/sand2.jpg) top center;
+     background: url(img/tof-nature/meadow.jpg) top center;
+    background: url(img/tof-nature/conifer.jpg) top center;
+    background: url(img/tof-nature/conifer2.jpg) top center;
+    background: url(img/tof-nature/desert.jpg) top center;
+    background: url(img/tof-nature/forest-floor.jpg) top center;
+    background: url(img/tof-nature/forest.jpg) top center;
+    background: url(img/tof-nature/nature.jpg) top center;
+    background: url(img/tof-nature/plant.jpg) top center;
+    s */
+
+    background: url(img/tof-nature/sandOpt4.jpg) top center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+a, button {
+    text-decoration: none;
+    font-family: 'espera';
+    /* Giorgio, espera denk  comfortaa nunito  */
+    font-weight: bolder;
+    color: #655F82;
+    line-height: 1em;
+}
+
+ h1 {font-size: 2em!important; margin-bottom: 0;}
+h2 {font-size: 1.5em!important; margin-bottom: 0;}
+
+
+div#monContener {
+    position: relative;
+    top: -10px;
+    /* width: 95%; */
+    height: auto;
+    margin: 0 auto;
+    padding: 0 0 0;
+}
+
+div#monContener div#top {
+    position: fixed;
+    /* top: 29px; */
+    width: 100%;
+    z-index: 20;
+
+}
+
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-right: 8px;
+    align-items: center;
+}
+
+header span {
+   
+    height: auto;
+    flex-grow: .1;
+}
+
+* {
+    transition: all 0.5s ease-out;
+    font-family: 'espera';
+
+}
+
+
+
+header ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* align-items: center; */
+    /* flex-flow: row nowrap;
+    justify-content: center; */
+
+
+}
+
+header ul li {
+    list-style: none;
+    margin: 2px;
+    width: auto;
+    min-width: 100px;
+}
+
+header ul li button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 9px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: none!important;
+
+
+}
+
+header ul li button i {
+    margin-right: 2px;
+    /* font-size: 20px; */
+    margin-bottom: 2px;
+}
+
+input:checked~div header ul li button i {
+    margin-right: -1px;
+}
+
+
+input:checked~div header ul li {
+    width: auto;
+    min-width: 0px;
+}
+
+input:checked~div header ul li button {
+    justify-content: left;
+    border-radius: 10px;
+}
+
+div#monContener>input {
+    position: sticky;
+    float: right;
+    top: -3px;
+    right: 249px;
+    display: block;
+    width: 5em;
+    height: 3em;
+    opacity: 0;
+}
+
+/* div#monContener > span {
+    position: relative;
+
+} */
+
+
+#monContener>span {
+    /* span pour le menu burger les 3 points*/
+    position: sticky;
+    display: block;
+    float: right;
+    margin: 0 -18px 0 auto;
+    top: -10px;
+    right: 250px;
+    height: 2em;
+    width: 2.8em;
+    background-color: rgba(255, 255, 255, 0.07);
+    z-index: -1;
+    border-radius: 20%;
+}
+
+#monContener>input:hover {
+    cursor: pointer;
+}
+
+
+
+#monContener > span b {
+    display: block;
+    position: relative;
+    color: rgb(255, 255, 255);
+    width: 1.7em;
+    height: 10px;
+    left: 8px;
+    top: 11px;
+    border-bottom: 4px dotted #fff;
+    transition: none;
+
+}
+
+input:checked ~ div header ul li a span {
+    display: inline-block;
+    overflow: hidden;
+    width: 0;
+    max-height: 1em;
+
+    max-width: 0px;
+}
+
+header ul li button span {
+    display: inline-block;
+    text-align: right;
+    width: 6em;
+    max-height: 1em;
+    overflow: hidden;
+    margin-bottom: 2px;
+   
+}
+
+input:checked ~ div header ul li button span {
+
+    width: 0;
+
+}
+
+#monContener input:checked~span b {
+
+    border-bottom: 3px #fff solid;
+    border-radius: 20%;
+
+
+}
+
+
+#monContener>br {
+    clear: both;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    #intro {
+
+        justify-content: center !important;
+    }
+
+    #main {
+        padding: 30px 10% !important;
+    }
+
+}
+
+
+
+@media screen and (min-width: 0px) and (max-width:400px) {
+    /* #menuHeader {
+        justify-content: center;
+    } */
+
+    input:checked~header#menuHeader {
+        /* flex-direction: row;
+        justify-content: space-between; */
+        /* align-items: flex-end; */
+    }
+
+    header ul {
+        width: 100%;
+    }
+
+    input:checked~div header ul {
+        width: auto;
+    }
+
+    header ul li a {
+        /* text-align: center; */
+    }
+
+    #intro {
+        margin-right: 29px !important;
+        margin-top: 7em !important;
+    }
+
+    #intro p {
+        width: 90% !important;
+        /* text-align: center !important; */
+    }
+
+    input:checked~div #intro p {
+        width: 50% !important;
+    }
+
+    input:checked~div div#intro {
+        margin-right: 2em !important;
+        margin-top: 1em !important;
+        justify-content: flex-start !important;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    #monContener {
+
+        width: 100% !important;
+    }
+
+    div#monContener div#top {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+
+    #monContener {
+        width: 100% !important;
+    }
+
+
+    div#monContener input {
+        right: 2.5em;
+    }
+
+    div#monContener span {
+        right: -25px;
+    }
+
+    div#monContener div#top {
+        width: 100%;
+    }
+
+    #monContener div#top img {
+        margin: 0 auto
+    }
+
+    div#monContener span {
+        right: -25px;
+    }
+
+
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-right: 2px;
+        
+    }
+
+    header ul li button {
+
+        text-align: right;
+    }
+
+    input:checked~div div#intro {
+        /* margin-right: 4em; */
+        /* margin-top: 5em; */
+    }
+
+    /*header ul li {
+        width: 100%;
+    }
+
+     input:checked~header ul li {
+        width: 100%;
+    } */
+
+    #intro {
+        /* justify-content: space-around!important; */
+        /* margin-right: 6em; */
+        align-items: center;
+
+    }
+
+    
+
+    #intro p {
+        width: 80% !important;
+    }
+
+    #intro p::before {
+        width: 0% ;
+        opacity: 0%!important;
+    }
+
+    #intro p::after {
+        width: 0% ;
+        opacity: 0%!important;
+    }
+
+    div#top header > span{
+
+        margin-left: 0.8em;
+        }
+
+}
+
+
+
+i[class^='ico'] {
+    height: 1.4em;
+    width: 1.4em;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+
+}
+
+i.ico-medit {
+    background: url(lib/ico-medit-v.png) top left;
+    
+}
+
+i.ico-music {
+    background: url(lib/ico-music-v.png) top left;
+    
+}
+
+i.ico-post {
+    background: url(lib/ico-post-v.png) top left;
+    
+}
+
+i.ico-jeux {
+    background: url(lib/ico-jeux-v.png) top left;
+    
+}
+
+header ul li button:hover i.ico-medit {
+    background: url(lib/ico-medit-h.png)
+}
+
+header ul li button:hover i.ico-music {
+    background: url(lib/ico-music-h.png)
+}
+
+header ul li button:hover i.ico-post {
+    background: url(lib/ico-post-h.png)
+}
+
+header ul li a:hover i.ico-jeux {
+    background: url(lib/ico-jeux-h.png)
+}
+
+
+header ul li button:hover {
+    background: rgba(255, 255, 255, 0.096);
+    color: #fff;
+}
+.hover{
+    background: rgba(255, 255, 255, 0.096);
+    color: #fff;
+
+}
+.hoverI{
+    filter: brightness(3);
+
+}
+
+
+#main {
+    display: flex;
+    flex-direction: column;
+    color: #777;
+    position: fixed;
+    overflow: scroll;
+    /* height: 87%; */
+    top : 7em;
+    bottom: 0;
+    /* margin-top: 5.1em; */
+    width: 100%;
+    padding: 30px 20px 0 20px;
+    border-top: 1px dotted rgba(255, 255, 255, 0.253);
+
+    /* box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px inset, rgba(0, 0, 0, 0.07) 0px 2px 4px inset, rgba(0, 0, 0, 0.07) 0px 4px 8px inset, rgba(0, 0, 0, 0.07) 0px 8px 16px inset, rgba(0, 0, 0, 0.07) 0px 16px 32px inset, rgba(0, 0, 0, 0.07) 0px 32px 64px inset; */
+
+}
+
+#main>div:nth-child(n+2) {
+    
+    margin: 10px auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px ;
+
+}
+
+div#jour {
+    display: flex;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    /* padding: 100px; */
+    justify-content: space-between;
+}
+
+div#jour > div > div:first-child  {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px / 10px;
+
+}
+div#jour > div {
+    /* box-sizing: content-box; */
+    width: 33%;
+    font-size: 0.8em!important;
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #b4913175;
+    padding: 9px;
+}
+
+/* div#jour > div:nth-child(3)  div:first-child::before {
+    content: "Ecouter";
+    display: block;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius:10px;
+    
+}
+
+div#jour > div:nth-child(4)  div:first-child::before {
+    content: "Ecouter";
+    display: block;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius:10px;
+    
+} */
+
+div#jour > div:nth-child(n+2)  div:first-child::before {
+    font-size:5em!important;
+    color: #fff;
+    content: "🞂";
+    display: block;
+    line-height: 100px;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+    text-align: center; 
+    opacity: 0; 
+    transition: all .5s;       
+}
+
+div#jour > div:nth-child(n+2) div:first-child:hover::before  {
+    opacity: 1;  
+    width: 100%;
+
+}
+
+div#jour > div:nth-child(n+2)  div:first-child {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    transition: all 1s;
+    cursor: pointer;
+   
+
+}
+
+div#jour button {
+    display: block;
+    text-align: right;
+    margin: 10px auto;
+
+}
+div#jour p {
+    font-size: 0.8em!important;
+    margin: 10px auto;
+}
+
+
+#intro {
+
+    display: flex;
+    /* flex-wrap: wrap;  */
+    /* justify-content: space-evenly; */
+    align-items: center;
+    z-index: -20;
+}
+
+#intro >div  img {
+   width: 100%;
+   /*   height: auto; */
+   
+}
+
+#intro >div:first-child { width: 100%;}
+.top{
+    background-color:#fff;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.top h2{
+    position: absolute;
+    padding-left: 20px;
+    color: #fff;
+
+}
+
+
+
+/* #intro div {
+    width: 100%;
+} */
+
+
+#intro p {
+    width: 50%;
+    font-size: 2.5em!important;
+    color:#fff;
+    padding-left: 10px;
+    align-items: center;
+}
+
+h1 {
+   color: #b49131;
+width: 100%;
+padding: 5px 0;
+}
+
+h2 {
+   color: #b49131;
+
+padding: 5px 0;
+}
+div#top header > span{
+
+    color: #fff;
+    font-size: 3em!important;
+}
+/* 
+#intro span { 
+    display: block;
+    margin-bottom: 5px;
+    color:#b49131 ;
+   
+    width: max-content;
+    padding: 2px 6px;
+  
+    background-color: #fff;
+    border-radius: 8px ;
+
+} */
+
+div[id^="bloc"]{
+    display: flex;
+    flex-wrap: wrap;
+}
+div[id^="bloc"] > div{
+    box-sizing: content-box;
+    font-size: 0.8em!important;
+    width: 100px;
+    /* margin: 2px; */
+    padding: 10px;
+    }
+
+
+div[id^="bloc"] h1, div[id^="bloc"] p  {
+    width: 100%;
+    /*  */
+
+}
+
+div[id^="bloc"] > p  {
+    margin-bottom: 20px;
+}
+
+div[id^="bloc"] img  {
+    border-radius: 8px;
+}
+
+div[id^="bloc"] div::before  {
+    position: absolute;
+    font-size:4em!important;
+    color: #fff;
+    content: "🞂";
+    display: block;
+    line-height: 100px;
+    width:0;
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+    text-align: center; 
+     opacity: 0;
+    transition: all .5s;  
+    cursor: pointer;      
+}
+
+.beforeOkDiv::before{
+opacity: 1!important;
+width:100px!important;
+}
+
+.beforeOk::before{
+opacity: 1!important;
+width:100%!important;
+}
+
+div[id^="bloc"] div:hover::before  {
+    width: inherit;
+    opacity: 1; 
+
+}
+
+
+.carousel-control-next, .carousel-control-prev { width: 5%!important;}
+
+ /* .carousel-item {     display: flex!important; } */
+ .sliderIn{ display: flex; align-items: center; justify-content: center;}  
+.imgIntro {width: min-content!important; }
+.carousel-control-prev-icon,.carousel-control-next-icon {background-image: none;}
+.carousel-control-prev-icon::before {color: #b49131!important;content: "❮"; font-size: 2em;}
+.carousel-control-next-icon::before {color: #b49131!important;content: "❯"; font-size: 2em;}
+
+
+.form label {display: block;}

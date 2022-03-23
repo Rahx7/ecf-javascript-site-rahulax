@@ -1,0 +1,189 @@
+
+{
+    "article":
+            [
+                [{
+                    "urlImg":"img/song.jpg",
+                    "titre":"Article 1 medit",
+                    "texte":"mon super article 1 qui déchire tout",
+                    "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                },
+                {
+                    "urlImg":"img/song.jpg",
+                    "titre":"Article 2medit",
+                    "texte":"mon super article 2 qui craque le slibar",
+                    "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                },
+                {
+                    "urlImg":"img/song.jpg",
+                    "titre":"Article 3medit",
+                    "texte":"mon super article 3 qui claque faut trop l'acheter !",
+                    "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                }],[
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 1 song",
+                        "texte":"mon super article 1 qui déchire tout",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 2 song",
+                        "texte":"mon super article 2 qui craque le slibar",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 3 song",
+                        "texte":"mon super article 3 qui claque faut trop l'acheter !",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 4 song",
+                        "texte":"mon super article 1 qui déchire tout",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 5 song",
+                        "texte":"mon super article 2 qui craque le slibar",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 6 song",
+                        "texte":"mon super article 3 qui claque faut trop l'acheter !",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 1 song",
+                        "texte":"mon super article 1 qui déchire tout",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 2 song",
+                        "texte":"mon super article 2 qui craque le slibar",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 3 song",
+                        "texte":"mon super article 3 qui claque faut trop l'acheter !",
+                        "durée":1.8,
+                        "urlImgTop": "img/topImg/songTop.jpg"
+                    }
+                ], 
+                [
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 1 article",
+                        "texte":"mon super article 1 qui déchire tout",
+                        "durée":1.8,
+                    "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 2 article",
+                        "texte":"mon super article 2 qui craque le slibar",
+                        "durée":1.8,
+                        "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 3  article",
+                        "texte":"mon super article 3 qui claque faut trop l'acheter !",
+                        "durée":1.8,
+                        "urlImgTop": "img/topImg/songTop.jpg"
+                    }
+                ],
+                [
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 1 jeux",
+                        "texte":"mon super article 1 qui déchire tout",
+                        "durée":1.8,
+                        "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 2 jeux",
+                        "texte":"mon super article 2 qui craque le slibar",
+                        "durée":1.8,
+                        "urlImgTop": "img/topImg/songTop.jpg"
+                    },
+                    {
+                        "urlImg":"img/song.jpg",
+                        "titre":"Article 3 jeux",
+                        "texte":"mon super article 3 qui claque faut trop l'acheter !",
+                        "durée":1.8,
+                        "urlImgTop": "img/topImg/songTop.jpg"
+                    }
+                ]
+            ],
+
+    "general": [
+                    {
+                        "titre": "Les méditations",
+                        "texte": "c'est super la méditation, pour faire le plein de bonheur et de bonnes énergies pour toi et tous tes amis-es"
+                    },
+                    {
+                        "titre": "Les musiques d'ambiances",
+                        "texte": "c'est super les musqiues d'ambiance quand tu veux méditer tranquillement et faire le vide en toi"
+                    },
+                    {
+                        "titre": "Les atricles un peu sympa",
+                        "texte": "Des article pour réfléchir un peu" 
+                    },
+                    {
+                        "titre": "Les jeux pour s'amuser",
+                        "texte": "Eclate-toi avec ces quelques jeux de concentration, et développe tes capacités énergétiques pour mieux te comprendre et te transformer" 
+                    }
+            ],
+
+    "autres": 
+                {
+                    "accueil": "Bienvenue dans l'univers perpétuel du Rahulax",
+                    "texteUne": "Profitez des méditations proposées et entrainez vous tout naturellement grâce à ces méditations guidées, créées et mises en ligne pour le plus grand bien de tous je l'éspère."
+                },
+
+
+    "une": [
+                {   
+                    "urlImg":"img/tof-nature/desert.jpg",
+                    "titre":"Initiation 1",
+                    "texte":"L'initiation est particulièrement importante pour prendre des bonnes habitudes et commencer à pratiquer et améliorer votre faculté à la transe et aux états modifiés de conscience. ",
+                    "durée":1.8,
+                    "urlImgTop": "img/topImg/desertTop.jpg"
+                },
+                {
+                    "urlImg":"img/tof-nature/nature.jpg",
+                    "titre":"Initiation 2",
+                    "texte":"L'initiation est particulièrement importante pour prendre des bonnes habitudes et commencer à pratiquer et améliorer votre faculté à la transe et aux états modifiés de conscience. ",
+                    "durée":1.8,
+                    "urlImgTop": "img/topImg/natureTop.jpg"
+                },
+                {
+                    "urlImg":"img/tof-nature/plant.jpg",
+                    "titre":"Voyage 1",
+                    "texte":"L'initiation est particulièrement importante pour prendre des bonnes habitudes et commencer à pratiquer et améliorer votre faculté à la transe et aux états modifiés de conscience. ",
+                    "durée":1.8,
+                    "urlImgTop": "img/topImg/plantTop.jpg"
+                }
+
+            ]
+
+    }

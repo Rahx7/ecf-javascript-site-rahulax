@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link href="src/bootstrap-5/css/bootstrap.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <link rel="stylesheet" href="src/css.css" type="text/css" media="all"  /> 
+     <script type="text/javascript" src="src/js.js"></script> 
+
+    
+
+    <title>Ma page site dev1 - mise en page</title>
+
+
+
+    <!--   #monContener>div#top>header#menuHeader>img[src='img/logo-rahulax.png' alt='logo rahulax' width='130' height='38']+(ul>(li>a>i.ico-$+span)*4)^^#intro>p+img+.jour>div+p>span^^^(#bloc_$>h1+p+(div>img+p>span)*4)*5+footer>img+div>(div>a+p)*3^p         mon code pour générer ma page html avec les raccourcis emmet -->
+
+</head>
+
+<body>
+    <div id="monContener">
+                
+        <input type="checkbox" name="check" id="" />
+        <span><b> </b></span><br>
+
+        <div id="top">
+
+            <header id="menuHeader">
+
+                <!-- <img src="img/logo-rahulax.png" alt="logo rahulax" width="130" height="38"> -->
+                <span id="logo"> Rahulax</span>
+
+                <ul>
+                    <li><button onclick="mouvCat(this)" cat="1"><i class="ico-medit"></i><span>Méditation</button></a></li>
+                    <li><button onclick="mouvCat(this)" cat="2"><i class="ico-music"></i><span>Ambiance</button></a></li>
+                    <li><button onclick="mouvCat(this)" cat="3"><i class="ico-post"></i><span>Articles</button></a></li>
+                    <li><button onclick="mouvCat(this)" cat="4"><i class="ico-jeux"></i><span>Jeux</span></button></li>
+                </ul>
+
+            </header>
+        </div>
+
+        <div id="main">
+            <div id="intro">
+                
+              
+
+               <div id="slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <!-- data-bs-interval="100000" -->
+                  <div class="carousel-item active" >
+
+                    <div class="sliderIn">
+                        <p>Bienvenue dans l'univers perpétuel du Rahulax</p>
+                        <img src="img/picto/fleur.png" alt="" width="308" height="279" class="imgIntro"> 
+                    </div> 
+
+                  </div>
+                  <div class="carousel-item" >
+                        <div class="sliderIn">
+                            <p>Rejoingnez l'équipe de méditant à nos rencontre hebdomadaire</p>
+                            <img src="img/picto/fleur.png" alt="" width="308" height="279" class="imgIntro"> 
+                        </div>
+                  </div>
+                  <div class="carousel-item" >
+                   
+                    <div class="sliderIn">
+                        <p>Profitez d'un accompagnement top level pour les ouf malade du cerveau</p>
+                        <img src="img/picto/fleur.png" alt="" width="308" height="279" class="imgIntro"> 
+                    </div>
+
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+
+            </div>
+            <div id="jour">
+                <h1>A la Une</h1>
+                <div>
+                    <div></div>
+                    <div><h2>Mon texte vidéo</h2> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
+                        Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </div>
+                        
+               
+                    </div>
+                <div>
+                    <div></div>
+                <div><h2>Mon texte vidéo</h2> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </div>
+                     
+               
+                </div>
+                <div>
+                    <div></div>
+                    <div><h2>Mon texte vidéo</h2> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+                         Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </div>
+                         
+               
+                </div>
+
+                <p> Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
+                    Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p>
+
+
+            </div>
+            <div id="bloc_1">
+                <h1>Les méditations</h1>
+                <p>i Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, 
+                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,  
+                     Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet, </p>
+
+                <!--
+                <div>
+                    <img src="img/song.jpg" alt="" width="100" height="100">
+                    <p>le texte pour la metitation <span>10:21mn</span></p>
+                </div> -->
+            </div>
+            <div id="bloc_2">
+                <h1>le titre de mon bloc</h1>
+                <p>l'introduction a mon bloc</p>
+                
+            </div>
+            <div id="bloc_3">
+                <h1>le titre de mon bloc</h1>
+                <p>l'introduction a mon bloc</p>
+                
+            </div>
+
+
+            <div id="bloc_4">
+                <h1>le titre de mon bloc</h1>
+                <p>l'introduction a mon bloc</p>
+                
+            </div>
+
+
+           
+        <!------------------
+        </div>
+        <footer>
+
+            
+            <img src="" alt="">
+            <div>
+                <div>
+                    <a href=""></a>
+                    <p></p>
+                </div>
+                <div>
+                    <a href=""></a>
+                    <p></p>
+                </div>
+                <div>
+                    <a href=""></a>
+                    <p></p>
+                </div>
+            </div>
+            <p></p>
+        </footer> ------>
+    </div>
+
+
+
+    
+
+
+</body>
+
+</html>
